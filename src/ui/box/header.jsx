@@ -87,9 +87,10 @@ class Background extends React.Component {
       className: 'auth0-lock-header-bg'
     };
 
-    if (cssBlurSupport) {
-      props.className += ' auth0-lock-blur-support';
-    }
+    // NOTE: (sergey) we don't need this
+    // if (cssBlurSupport) {
+    //   props.className += " auth0-lock-blur-support";
+    // }
 
     const blurProps = {
       className: 'auth0-lock-header-bg-blur',
