@@ -47,18 +47,26 @@ export default class SocialButtonsPane extends React.Component {
       );
     });
 
-    const loading =
-      showLoading &&
+    const loading = showLoading && (
       <div className="auth0-loading-container">
         <div className="auth0-loading" />
-      </div>;
+      </div>
+    );
 
     return (
       <div className="auth-lock-social-buttons-pane">
         {header}
         <div>
-          <p>
-            Sign up to create your first dataspace or login. Please use one of these identity providers.
+          <p style={{ 'font-size': '12px' }}>
+            Sign up to create your first dataspace or login. Please use one of these identity
+            providers.
+          </p>
+          <p style={{ 'font-size': '10px' }}>
+            By signing up to Humio, you also accept to comply with our{' '}
+            <a href="http://humio.com/terms-and-conditions.html" target="_blank">
+              Terms and Conditions
+            </a>{' '}
+            and receive product updates from Humio.
           </p>
         </div>
         <div className="auth0-lock-social-buttons-container">{buttons}</div>
