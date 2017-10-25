@@ -56,6 +56,11 @@ export default class SocialButtonsPane extends React.Component {
     return (
       <div className="auth-lock-social-buttons-pane">
         {header}
+        <div>
+          <p>
+            Sign up to create your first dataspace or login. Please use one of these identity providers.
+          </p>
+        </div>
         <div className="auth0-lock-social-buttons-container">{buttons}</div>
         {loading}
       </div>
